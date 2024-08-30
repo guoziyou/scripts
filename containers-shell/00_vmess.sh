@@ -21,7 +21,7 @@ export ARGO_DOMAIN=${ARGO_DOMAIN:-'fq.fa666.cloudns.ch'}      # ARGO 固定隧�
 export ARGO_AUTH=${ARGO_AUTH:-'eyJhIjoiNTA0NmI1ODdjNmU0YmRhN2FlNTM2ZGZjZGVjM2M1NDkiLCJ0IjoiZTI5MWUwODQtMmQ4My00MzI0LTg3OTUtMWFiODkwNjcwYzMwIiwicyI6Ik56Vm1Zemt4WkRFdE9UVXlOaTAwTnpCa0xUaG1NV0l0TXpJelpqSTRZVFJoTm1aaSJ9'}         # ARGO 固定隧道json或token，留空将使用临时隧道
 export CFIP=${CFIP:-'www.visa.com.tw'}   # 优选ip或优选域名
 export CFPORT=${CFPORT:-'443'}          # 优选ip或优选域名对应端口  
-export PORT=${PORT:-'20000'}           # ARGO端口必填
+export PORT=${PORT:-'31477'}           # ARGO端口必填
 
 [[ "$HOSTNAME" == "s1.ct8.pl" ]] && WORKDIR="domains/${USERNAME}.ct8.pl/logs" || WORKDIR="domains/${USERNAME}.serv00.net/logs" && rm -rf $WORKDIR
 [ -d "$WORKDIR" ] || (mkdir -p "$WORKDIR" && chmod 777 "$WORKDIR")
